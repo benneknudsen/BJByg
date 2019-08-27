@@ -9,12 +9,13 @@
   <title> BjByg | Bording </title>
   <meta name="description" content="BjByg" />
   <meta name="author" content="Benjamin Schou Knudsen">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-<div class="container">
+
 
 
 <nav>
@@ -22,10 +23,10 @@
     <h4>Bj Byg</h4>
   </div>
   <ul class="nav-links">
-    <li><a href="#hjem">Forside</a></li>
-    <li><a href="#galleri">Galleri</a></li>
-    <li><a href="om">Om Bj Byg</a></li>
-    <li><a href="kontakt">Kontakt</a></li>
+    <li><a href="#hjem" onclick="showPage('hjem')">Forside</a></li>
+    <li><a href="#galleri" onclick="showPage('galleri')">Galleri</a></li>
+    <li><a href="#om" onclick="showPage('om')">Om Bj Byg</a></li>
+    <li><a href="#kontakt" onclick="showPage('kontakt')">Kontakt</a></li>
   </ul>
   <div class="burger">
     <div class="line1"></div>
@@ -33,23 +34,43 @@
     <div class="line3"></div>
   </div>
 </nav>
-<section id="#hjem">
-<h1>BJ Byg Bording</h1>
-<p>Velkommen til</p>
+<!-- pages -->
+<!-- home page -->
+<section id="hjem" class="page">
+
+    <h2>Home</h2>
+
+  <p>My Single Page Web App Template</p>
 </section>
-<section id="#galleri">
-<h1>BJ Byg Bording</h1>
-<p>Velkommen til</p>
+
+<!-- about page -->
+<section id="galleri" class="page">
+
+    <h2>About</h2>
+
+  <p>This is my about page</p>
 </section>
-<section id="#om">
-<h1>BJ Byg Bording</h1>
-<p>Velkommen til</p>
+
+<!-- clients page -->
+<section id="om" class="page">
+
+    <h2>Clients</h2>
+
+  <p>Hmm, there should be some clients right here...</p>
 </section>
-<section id="#kontakt">
-<h1>BJ Byg Bording</h1>
-<p>Velkommen til</p>
+
+<!-- contact page -->
+<section id="kontakt" class="page">
+
+    <h2>Contact</h2>
+  </header>
+  <p>So, contact info?</p>
+  <p><a href="mailto:race@eaaa.dk">race@eaaa.dk</a></p>
+
+
+  </a>
 </section>
-</div>
+
 
 
   <!-- Scripts !-->

@@ -30,6 +30,8 @@ nav {
   min-height: 8vh;
   font-family: 'Poppins', sans-serif;
   background-color: #5D4954;
+  top: 0;
+  z-index: 10000;
 }
 
 .logo {
@@ -144,4 +146,14 @@ nav {
     text-align: center;
     width: 100%;
     animation: fadeIn 0.6s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
 }
