@@ -8,17 +8,14 @@
 
 
 html, body {
-    background-color: #f8f8f8;
+    background-color: #EEEEEE;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: auto;
 
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-}
+
 
 /* Navbar */
 
@@ -29,13 +26,13 @@ nav {
   align-items: center;
   min-height: 8vh;
   font-family: 'Poppins', sans-serif;
-  background-color: #5D4954;
+  background-color: #EEEEEE;
   top: 0;
   z-index: 10000;
 }
 
 .logo {
-  color: rgb(226, 226, 226);
+  color: black;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 22px;
@@ -54,7 +51,7 @@ nav {
 }
 
 .nav-links a{
-  color: rgb(226, 226, 226);
+  color: black;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -64,6 +61,7 @@ nav {
 .burger {
   display: none;
   cursor: pointer;
+  padding-left: 320px;
 }
 
 
@@ -71,7 +69,7 @@ nav {
 .burger div{
   width: 25px;
   height: 3px;
-  background-color: rgb(226, 226, 226);
+  background-color: black;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -93,7 +91,7 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #5D4954;
+    background-color: #EEEEEE;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,6 +143,7 @@ nav {
     display: none;
     text-align: center;
     width: 100%;
+    height: 100%;
     animation: fadeIn 0.6s;
 }
 
@@ -156,4 +155,107 @@ nav {
   to {
     opacity: 1
   }
+}
+
+/* Generelle CSS regler */
+
+.bg {
+  /* The image used */
+  background-image: url(../billeder/builder.jpg);
+
+
+
+  /* Full height */
+  height: 60%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Lato', sans-serif;
+}
+
+.titel {
+  margin-top: 3vh;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: 430;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+
+}
+
+.billede1 {
+  margin-top: 3vh;
+  margin-bottom: 8px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.arrow {
+    text-align: center;
+    margin: 12% 0;
+
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+
+}
+
+.icon {
+  margin-top: 3vh;
+  margin-bottom: 10px;
+  font-size: 70px;
+}
+
+.p1 {
+  font-size: 20px;
+  margin-top: 3vh;
+  margin-bottom: 12px;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.col-sm {
+border-radius: 10px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 5px;
+}
+
+.col-sm:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
 }
