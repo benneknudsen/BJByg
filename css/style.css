@@ -40,6 +40,14 @@ nav {
 
 }
 
+.active {
+    color: #080808 !important
+}
+
+.nav-links a:hover {
+  color: grey;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -160,18 +168,12 @@ nav {
 /* Generelle CSS regler */
 
 .bg {
-  /* The image used */
   background-image: url(../billeder/builder.jpg);
-
-
-
-  /* Full height */
   height: 60%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 
@@ -183,6 +185,10 @@ h4 {
 }
 
 .titel {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
   margin-top: 3vh;
   margin-bottom: 10px;
   font-size: 3rem;
@@ -194,6 +200,10 @@ h4 {
 }
 
 .billede1 {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
   margin-top: 3vh;
   margin-bottom: 8px;
   font-size: 3rem;
@@ -227,18 +237,64 @@ h4 {
 
 .container {
   padding-top: 50px;
+  text-align: center;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s; /* Firefox */
+  -webkit-animation: fadein 3s; /* Safari and Chrome */
+  -o-animation: fadein 3s; /* Opera */
 }
 
-.col-sm {
-border-radius: 10px;
+.row {
+  text-align: center;
+}
 
+
+
+.flip-card {
+
+  border-radius: 10px;
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    margin: 5px;
+  background-color: #bbb;
+  color: black;
+  font-size: 80px;
 }
 
-.col-sm:hover {
-  box-shadow: 0 0 11px rgba(33,33,33,.2);
+.flip-card-back {
+
+  background-color: #white;
+  color: black;
+  transform: rotateY(180deg);
 }
 
 @keyframes bounce {
@@ -257,5 +313,42 @@ border-radius: 10px;
 
     60% {
         transform: translateY(-15px);
+    }
+}
+
+/* Fade in på div */
+
+#velkommen {
+    margin-top: 150px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
     }
 }
