@@ -57,3 +57,11 @@ const navSlide = () => {
 }
 
 navSlide();
+
+
+AOS.init({
+
+  duration: 1000
+});
+
+$('.carousel').carousel()
