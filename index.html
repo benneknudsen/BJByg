@@ -18,32 +18,38 @@
 
 <body>
 
-
-
-
-  <div class='row'>
+<header>
+  <nav>
     <div class="navbar">
-      <a href="#home" class="active" onclick="showPage('home')">Forside</a>
+      <a href="#home" class="hovere" onclick="showPage('home')">Forside</a>
       <a href="#clients" class="hovere" onclick="showPage('clients')">Galleri</a>
       <a href="#contact" class="hovere" onclick="showPage('contact')">Kontakt</a>
-</div>
+  </nav>
+<section>
 
-<div class="start">
-  <h1 class="titeltekst">Hos os er kvalitet ikke noget
-man bare taler om...</h1>
 
-</div>
-<div class="arrow bounce">
-<a id="pil" href="#">  <i class="fas fa-chevron-down" style="font-size: 35px; color: white"></i></a>
-</div>
+  <div class="hero">
+    <img src="billeder/FL2615.jpg" alt="Bjbyg-Bording">
+  <h1 class="headline">Bj Byg</h1>
 
+  </div>
+  </section>
+  <div class="arrow bounce">
+<a href="#info">  <i class="fas fa-chevron-down" style="font-size: 35px; color: white"></i></a>
 </div>
+</header>
 
-<div id="info"></div>
+
+
+<div class="slider"></div>
+
+
 
 
 
     <!-- Scripts !-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js.js"></script>
 
