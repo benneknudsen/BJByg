@@ -1,5 +1,36 @@
 "use strict"
 
+// Single page
+
+
+// hide all pages
+function hideAllPages() {
+  let pages = document.querySelectorAll(".titel");
+  for (let page of pages) {
+    page.style.display = "none";
+  }
+}
+
+// show page or tab
+function showPage(pageId) {
+  hideAllPages();
+  document.querySelector(`#${pageId}`).style.display = "block";
+  location.href = `#${pageId}`;
+}
+
+
+
+// set default page
+function setDefaultPage() {
+  let page = "home";
+  if (location.hash) {
+    page = location.hash.slice(1);
+  }
+  showPage(page);
+}
+
+setDefaultPage();
+
 Vue.config.devtools = true;
 
 Vue.component('card', {
@@ -82,7 +113,17 @@ tl.fromTo(hero,1, {height: "0%"}, {height: '90%', ease: Power2.easeInOut})
 .fromTo(slider, 1.2, {x: "-100%"}, {x: '0%', ease: Power2.easeInOut}, "-=1.2")
 .fromTo(headline, 1.2, {opacity: 0, x: 50}, {opacity: 1, x: 0}, "-=0.1");
 
+
+
 AOS.init({
 
   duration: 1000
+});
+
+$(".gallery").magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  gallery:{
+    enabled: true
+  }
 });

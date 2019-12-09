@@ -8,6 +8,12 @@ scroll-behavior: smooth;
 $hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
 $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
+.titel {
+
+    display: none;
+
+}
+
 .h2 {
   text-align: center;
   font-size: 30px;
@@ -284,8 +290,8 @@ body {
 }
 
 .project__image {
-  padding: 20px 10px;
-  max-width: 60%;
+  padding: 20px 60px;
+  max-width: 80%;
   }
   @media all and (min-width: 75em) {
     .project__image {
@@ -457,6 +463,65 @@ h1 + p, p + p {
 
 /* Cards - Slut */
 
+/* galleri */
+
+#about {
+  background-color: #D1CFCF;
+}
+
+.gallery-section{
+  width: 100%;
+  padding: 60px 0;
+}
+
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery-section h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.border{
+  width: 180px;
+  height: 4px;
+  background: #333;
+  margin: 60px auto;
+}
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img{
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.gallery-section .image:hover img{
+  transform: scale(1.4) rotate(15deg);
+}
+
+
+/* Kontakt */
+
+#contact {
+  background: #D1CFCF;
+}
 
 /* Media Queries */
 
@@ -473,5 +538,23 @@ h1 + p, p + p {
 
   .container {
 
+  }
+}
+
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image{
+    flex: 100%;
   }
 }

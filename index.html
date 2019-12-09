@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title> BjByg | Bording </title>
   <meta name="description" content="BjByg" />
@@ -20,12 +23,13 @@
 
 <body>
 
+<section id="home" class="titel">
 <header class="fyld">
   <nav>
     <div class="navbar">
-      <a href="#home" class="hovere">Forside</a>
-      <a href="#clients" class="hovere">Galleri</a>
-      <a href="#contact" class="hovere">Kontakt</a>
+      <a href="#home" class="hovere" onclick="showPage('home')">Forside</a>
+      <a href="#clients" class="hovere"  onclick="showPage('about')">Galleri</a>
+      <a href="#contact" class="hovere" onclick="showPage('contact')">Kontakt</a>
   </nav>
 <section class="section1">
 
@@ -74,7 +78,7 @@
 
 
              <article class="project">
-     <img class="project__image" src="billeder/persona.png">
+     <img class="project__image" src="billeder/basse.jpg">
      <div class="project__info">
          <h4 class="title1">Kort om mig</h4>
          <p class="info__text">I 1997 startede jeg Murerfirmaet BJ BYG. Dengang var jeg eneste mand i firmaet. Sådan er det stadig!
@@ -88,12 +92,73 @@ Du er velkommen til at se nogle eksempler på mit arbejde under menupunktet Gall
   </article>
 
 
+</section>
+
+<!-- Start på Galleri side !-->
+  <section id="about" class="titel">
+    <nav>
+      <div class="navbar">
+        <a href="#home" class="hovere" onclick="showPage('home')">Forside</a>
+        <a href="#clients" class="hovere"  onclick="showPage('about')">Galleri</a>
+        <a href="#contact" class="hovere" onclick="showPage('contact')">Kontakt</a>
+    </nav>
+
+    <div class="gallery-section">
+      <div class="inner-width">
+        
+        <div class="gallery">
+
+          <a href="billeder/FL2615.jpg" class="image">
+            <img src="billeder/FL2615.jpg" alt="">
+          </a>
+
+          <a href="billeder/FL2612.jpg" class="image">
+            <img src="billeder/FL2612.jpg" alt="">
+          </a>
+
+          <a href="billeder/FL2628.jpg" class="image">
+            <img src="billeder/FL2628.jpg" alt="">
+          </a>
+
+          <a href="billeder/FL2636.jpg" class="image">
+            <img src="billeder/FL2636.jpg" alt="">
+          </a>
+
+          <a href="billeder/FL2633.jpg" class="image">
+            <img src="billeder/FL2633.jpg" alt="">
+          </a>
+
+          <a href="billeder/FL2555.jpg" class="image">
+            <img src="billeder/FL2555.jpg" alt="">
+          </a>
+
+          <a href="billeder/BB2553.jpg" class="image">
+            <img src="billeder/BB2553.jpg" alt="">
+          </a>
+
+          <a href="billeder/FL2612.jpg" class="image">
+            <img src="billeder/FL2612.jpg" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<!-- Start på Kontakt side !-->
+
+<section id="contact" class="titel">
+  <nav>
+    <div class="navbar">
+      <a href="#home" class="hovere" onclick="showPage('home')">Forside</a>
+      <a href="#clients" class="hovere"  onclick="showPage('about')">Galleri</a>
+      <a href="#contact" class="hovere" onclick="showPage('contact')">Kontakt</a>
+  </nav>
 
 
 
-
-
-
+</section>
 
     <!-- Scripts !-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
