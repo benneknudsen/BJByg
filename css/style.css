@@ -271,6 +271,69 @@ body {
 }
 
 
+
+
+.project {
+  overflow: hidden;
+
+}
+
+.projectx {
+  overflow: hidden;
+
+}
+
+.project__image {
+  padding: 20px 10px;
+  max-width: 60%;
+  }
+  @media all and (min-width: 75em) {
+    .project__image {
+      margin: 30px 60px 0 0;
+      margin-right: 60px;
+      float: right;
+      width: 20%;
+      padding-bottom: 130px; } }
+
+      .project__title {
+  padding: 50px 30px 0;
+  font-size: 40px;
+ }
+
+  .project__info {
+  padding: 0 30px;
+  overflow: hidden; }
+  .project__info a {
+    color: inherit; }
+  @media all and (min-width: 75em) {
+    .project__info {
+      float: left;
+      width: 40%;
+      margin-left: 60px;
+      margin-top: 40px; } }
+
+      .title1 {
+        margin: 30px 0;
+        font-family: "Raleway";
+        font-size: 24px;
+        font-weight: 700;
+        color: #5D4037;
+        text-align: center;
+      }
+
+
+      .info__text {
+        font-size: 24px;
+        color: black;
+        font-family: 'DM Sans', sans-serif;
+}
+
+.project__tools {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+
 /* Cards på siden */
 
 .title {
