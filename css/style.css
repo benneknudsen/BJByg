@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-
+scroll-behavior: smooth;
 
 }
 
@@ -88,18 +88,34 @@ body {
     height: 100%;
     margin: auto;
     scroll-behavior: smooth;
-     -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
 
 }
+
+.miniinfo {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../billeder/FL2555.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 6rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smalltekst {
+  font-size: 2rem;
+  font-weight: 230;
+  color: #f2f2f2;
+  font-family: 'DM Sans', sans-serif;
+}
+
 
 
 .row {
   display: flex;
   width: 100%;
-  background-image: url(../billeder/FL2615.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-      width: 100%;
       height: 100%;
       margin: auto;
       overflow: hidden;
@@ -282,7 +298,7 @@ h1 + p, p + p {
 }
 
 .card-wrap {
-  margin: 10px;
+  margin: 40px;
   transform: perspective(800px);
   transform-style: preserve-3d;
   cursor: pointer;
@@ -381,14 +397,18 @@ h1 + p, p + p {
 
 /* Media Queries */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .navbar a {
       margin-right: 10px;
       text-decoration: none;
       color: white;
       font-weight: 370;
       border: 0;
-      font-size: 1.17rem;
+      font-size: 15px;
       font-family: Lato, sans-serif;
+  }
+
+  .container {
+
   }
 }
