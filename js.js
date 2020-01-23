@@ -1,35 +1,5 @@
-"use strict"
-
-// Single page
 
 
-// hide all pages
-function hideAllPages() {
-  let pages = document.querySelectorAll(".titel");
-  for (let page of pages) {
-    page.style.display = "none";
-  }
-}
-
-// show page or tab
-function showPage(pageId) {
-  hideAllPages();
-  document.querySelector(`#${pageId}`).style.display = "block";
-  location.href = `#${pageId}`;
-}
-
-
-
-// set default page
-function setDefaultPage() {
-  let page = "home";
-  if (location.hash) {
-    page = location.hash.slice(1);
-  }
-  showPage(page);
-}
-
-setDefaultPage();
 
 Vue.config.devtools = true;
 
@@ -101,29 +71,75 @@ var app = new Vue({
 });
 
 
-const hero = document.querySelector('.hero');
-const slider = document.querySelector('.slider');
-const navbar = document.querySelector('.navbar');
-const headline = document.querySelector('.headline');
-
-const tl = new TimelineMax();
-
-tl.fromTo(hero,1, {height: "0%"}, {height: '90%', ease: Power2.easeInOut})
-.fromTo(hero, 1.2, {width: '100%'}, {width: '90%', ease: Power2.easeInOut})
-.fromTo(slider, 1.2, {x: "-100%"}, {x: '0%', ease: Power2.easeInOut}, "-=1.2")
-.fromTo(headline, 1.2, {opacity: 0, x: 50}, {opacity: 1, x: 0}, "-=0.1");
 
 
 
-AOS.init({
 
-  duration: 1000
+
+
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+
+    }
+  });
+}
+
+
+$(document).ready(function () {
+  $('#drawer-toggle').click(function () {
+    $('#nav-icon1').toggleClass('open');
+  });
 });
 
-$(".gallery").magnificPopup({
-  delegate: 'a',
-  type: 'image',
-  gallery:{
-    enabled: true
-  }
+$(document).ready(function () {
+  $('#drawer-togglem').click(function () {
+    $('#nav-icon1m').toggleClass('open');
+  });
 });
+
+
+
+var dropdown1 = document.getElementsByClassName("dropdown-btn-m");
+var i;
+
+for (i = 0; i < dropdown1.length; i++) {
+  dropdown1[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+
+$(".rotate").click(function () {
+  $(this).toggleClass("down");
+})
+
+
+
+$(document).ready(function () {
+  $('.dropdown-btn').click(function () {
+    $('.dropdown-container').toggleClass('up');
+  });
+});
+
+$(document).ready(function () {
+  $('.dropdown-btn').click(function () {
+    $('.roter').toggleClass('ned');
+  });
+});
+

@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title> BjByg | Bording </title>
@@ -15,45 +13,89 @@
   <meta name="author" content="Benjamin Schou Knudsen">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 <link href="https://fonts.googleapis.com/css?family=DM+Sans|Lato|Poppins&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Barlow:500|Raleway:500.700" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/1cb7c201ad.js"></script>
 
 
 </head>
 
-<body>
-
-<section id="home" class="titel">
-<header class="fyld">
-  <nav>
-    <div class="navbar">
-      <a href="#home" class="hovere" onclick="showPage('home')">Forside</a>
-      <a href="#clients" class="hovere"  onclick="showPage('about')">Galleri</a>
-      <a href="#contact" class="hovere" onclick="showPage('contact')">Kontakt</a>
-  </nav>
-<section class="section1">
 
 
-  <div class="hero">
-    <img src="billeder/FL2615.jpg" alt="Bjbyg-Bording">
-  <h1 class="headline">Bj Byg</h1>
+<div class="topbar">
+  <div class="topcontainer">
+<ul class="topelement">
+<li>TOP KVALITET</li>
+<li>TOP KVALITET</li>
+<li>TOP KVALITET</li>
+<li>TOP KVALITET</li>
+<li>ALTID MED ET SMIL</li>
+
+
+</ul>
 
   </div>
-  </section>
-  <div class="arrow bounce">
-<a href="#next">  <i class="fas fa-chevron-down" style="font-size: 35px; color: white"></i></a>
 </div>
-</header>
+
+<div class="innertopbar">
+  <div class="container infowrapper">
+  <div class="pattern">
+  <span class="patternin" style="width: 522.5px;"></span>
+  <div class="phoneinfo"><a href="tel:+45 12 32 34 56">12 32 34 56</a></div>
+  <div class="innertoptext">Hos os er kvalitet ikke noget
+    man bare taler om...</div>
+  </div>
+  </div>
+  </div>
+
+<nav id="navbar" class="navbar">
+
+  <a href="index.html"><img id="logo" class="logo" src="billeder/bjbygge.png" alt="PatrickF-Logo"></a>
 
 
 
-<div class="slider"></div>
+</nav>
+
+<nav id="navbar" class="navbar-mobil">
+  <a href="index.html"><img id="logo" class="logo" src="billeder/bjbygge.png" alt="PatrickF-Logo"></a>
+  <div id="nav-icon1m">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  <input type="checkbox" id="drawer-togglem" name="drawer-togglem"/>
+  <label for="drawer-togglem" id="drawer-toggle-labelm"></label>
+  <nav id="drawerm">
+     <ul>
+      <li><a href="om.html">Om ...</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <button class="dropdown-btn-m">Menu-inspiration
+          <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="dropdown-container-m">
+          <div class="prøve-m">
+              <a href="tapas.html">Tapas</a>
+              <a href="menu.html">&ltTitel C&gt Buffet</a>
+              <a href="eksempel-menu.html">Natmad</a>
+              <a href="tapas.html">&ltTitel A&gt Menu</a>
+              <a href="menu.html">&ltTitel D&gt Buffet</a>
+              <a href="eksempel-menu.html">Snacks</a>
+              <a href="tapas.html">&ltTitel B&gt Menu</a>
+              <a href="menu.html">Reception Buffet</a>
+
+          </div>
+      </div>
+
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <img class="calendarm" src="billeder/calendar.png" alt="">
+     </ul>
+  </nav>
+</nav>
 
 
 <h1 id="next" class="title">Din lokale murermester i Bording - Med en bred vifte af kompetencer</h1>
 
 <div id="app" class="container">
-  <card data-image="billeder/BB2553.jpg">
+  <card data-image="billeder/bad.jpg">
     <h1 slot="header">Badeværelse</h1>
     <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
   </card>
@@ -61,7 +103,7 @@
     <h1 slot="header">Gang</h1>
     <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
   </card>
-  <card data-image="billeder/BiancoOroeKøkken.jpg">
+  <card data-image="billeder/køkken.jpg">
     <h1 slot="header">Køkken</h1>
     <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
   </card>
@@ -77,94 +119,88 @@
   </div>
 
 
-             <article class="project">
-     <img class="project__image" src="billeder/basse.jpg">
-     <div class="project__info">
-         <h4 class="title1">Kort om mig</h4>
-         <p class="info__text">I 1997 startede jeg Murerfirmaet BJ BYG. Dengang var jeg eneste mand i firmaet. Sådan er det stadig!
-
-Det er den én af de måder jeg kan sikre den helt rette kvalitet fra starten til slutningen på et projekt - stort som småt.
-
-Min speciale er uden tvivl klinkearbejde. Her tæller hver en millimeter - hver gang. Jeg har i de seneste år lagt  mange spændende klinkegulve i badeværelser og i stuer.
-
-Du er velkommen til at se nogle eksempler på mit arbejde under menupunktet Galleri. </p>
-     </div>
-  </article>
-
-
-</section>
-
-<!-- Start på Galleri side !-->
-  <section id="about" class="titel">
-    <nav>
-      <div class="navbar">
-        <a href="#home" class="hovere" onclick="showPage('home')">Forside</a>
-        <a href="#clients" class="hovere"  onclick="showPage('about')">Galleri</a>
-        <a href="#contact" class="hovere" onclick="showPage('contact')">Kontakt</a>
-    </nav>
-
-    <div class="gallery-section">
-      <div class="inner-width">
-        
-        <div class="gallery">
-
-          <a href="billeder/FL2615.jpg" class="image">
-            <img src="billeder/FL2615.jpg" alt="">
-          </a>
-
-          <a href="billeder/FL2612.jpg" class="image">
-            <img src="billeder/FL2612.jpg" alt="">
-          </a>
-
-          <a href="billeder/FL2628.jpg" class="image">
-            <img src="billeder/FL2628.jpg" alt="">
-          </a>
-
-          <a href="billeder/FL2636.jpg" class="image">
-            <img src="billeder/FL2636.jpg" alt="">
-          </a>
-
-          <a href="billeder/FL2633.jpg" class="image">
-            <img src="billeder/FL2633.jpg" alt="">
-          </a>
-
-          <a href="billeder/FL2555.jpg" class="image">
-            <img src="billeder/FL2555.jpg" alt="">
-          </a>
-
-          <a href="billeder/BB2553.jpg" class="image">
-            <img src="billeder/BB2553.jpg" alt="">
-          </a>
-
-          <a href="billeder/FL2612.jpg" class="image">
-            <img src="billeder/FL2612.jpg" alt="">
-          </a>
-
-        </div>
-      </div>
-    </div>
-</section>
-
-
-<!-- Start på Kontakt side !-->
-
-<section id="contact" class="titel">
-  <nav>
-    <div class="navbar">
-      <a href="#home" class="hovere" onclick="showPage('home')">Forside</a>
-      <a href="#clients" class="hovere"  onclick="showPage('about')">Galleri</a>
-      <a href="#contact" class="hovere" onclick="showPage('contact')">Kontakt</a>
-  </nav>
+ 
 
 
 
-</section>
+
+
+
+
+</div>
+
+
+
+
+
+  
+
+</div>
+
+<div class="LINE">
+  <hr class="streg">
+
+</div>
+
+</div>
+
+<div class="footerdesktop">
+  <div class="footertxt1">
+      <p class="footertexthead">PATRICK F. ApS</p>
+      <p class="footertextL">Tangen 6</p>
+      <p class="footertextL">8200 Aarhus N</p>
+      <p class="footertextL">CVR-nr. 40957642</p>
+  </div>
+  <div class="footertxt2">
+      <p class="footertexthead1">T: <strong>+45</strong> 2161 4499 </p>
+      <p class="footertextR">din-kok@patrickf.dk</p>
+
+  </div>
+</div>
+
+<div class="footermobil">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+<header class="navbar">
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Scripts !-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+    <script src="https://kit.fontawesome.com/1cb7c201ad.js" crossorigin="anonymous"></script>
     <script src="js.js"></script>
 
 
