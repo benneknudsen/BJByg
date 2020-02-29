@@ -124,22 +124,28 @@ for (i = 0; i < dropdown1.length; i++) {
   });
 }
 
-
 $(".rotate").click(function () {
   $(this).toggleClass("down");
 })
 
 
-
 $(document).ready(function () {
-  $('.dropdown-btn').click(function () {
+  $('.dropdown-btn-m').click(function () {
     $('.dropdown-container').toggleClass('up');
   });
 });
 
+
+
 $(document).ready(function () {
-  $('.dropdown-btn').click(function () {
+  $('.arrow').click(function () {
     $('.roter').toggleClass('ned');
+  });
+});
+
+$(document).ready(function () {
+  $('.arrow1').click(function () {
+    $('.roter1').toggleClass('ned');
   });
 });
 

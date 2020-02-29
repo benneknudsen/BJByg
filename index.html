@@ -67,43 +67,103 @@
 </nav>
 
 <nav id="navbar" class="navbar-mobil">
-  <a href="index.html"><img id="logo" class="logo" src="billeder/bjbygge.png" alt="PatrickF-Logo"></a>
+  <a href="index.html"><img id="logo" class="logo-mobil" src="billeder/LOGO-mobil.svg" alt="PatrickF-Logo"></a>
   <div id="nav-icon1m">
       <span></span>
       <span></span>
       <span></span>
     </div>
   <input type="checkbox" id="drawer-togglem" name="drawer-togglem"/>
-  <label for="drawer-togglem" id="drawer-toggle-labelm"></label>
+  <label class="label" for="drawer-togglem" id="drawer-toggle-labelm"></label>
   <nav id="drawerm">
      <ul>
-      <li><a href="om.html">Om ...</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <button class="dropdown-btn-m">Menu-inspiration
-          <i class="fas fa-chevron-down"></i>
-      </button>
-      <div class="dropdown-container-m">
-          <div class="prøve-m">
-              <a href="tapas.html">Tapas</a>
-              <a href="menu.html">&ltTitel C&gt Buffet</a>
-              <a href="eksempel-menu.html">Natmad</a>
-              <a href="tapas.html">&ltTitel A&gt Menu</a>
-              <a href="menu.html">&ltTitel D&gt Buffet</a>
-              <a href="eksempel-menu.html">Snacks</a>
-              <a href="tapas.html">&ltTitel B&gt Menu</a>
-              <a href="menu.html">Reception Buffet</a>
-
-          </div>
+      <button class="dropdown-btn-m arrow1">OM OS
+        <img src="billeder/arrow-symbol-20.svg" class="arrow-svg roter1">
+    </button>
+    <div class="dropdown-container-m">
+        <div class="prøve-m">
+            <a href="about.html">Hvem er vi?</a>
+            <a href="menu.html">Hvad kan vi?</a>
+            <a href="eksempel-menu.html">Oplysninger</a>
+        </div>
+    </div>
+    <button class="dropdown-btn-m arrow">PROJEKTER
+      <img src="billeder/arrow-symbol-20.svg" class="arrow-svg roter">
+  </button>
+  <div class="dropdown-container-m">
+      <div class="prøve-m">
+          <a href="tapas.html">Hvad har vi lavet?</a>
+          <a href="menu.html">Prisvindende projekter</a>
+          <a href="eksempel-menu.html">Hvad kan vi lave for dig?</a>
       </div>
+  </div>
 
-      <li><a href="kontakt.html">Kontakt</a></li>
-     
+      <li><a href="om.html">BORGER</a></li>
+      <li><a href="menu.html">INVESTOR</a></li>
+
+      <li><a href="kontakt.html">NYHEDER</a></li>
+      <li><a href="kontakt.html">KONTAKT</a></li>
+      <div class="project1">
+
+        
+  
+        <a href="#"> <span class="icon-m icon-linkedin"></span></a>
+        <a href="#"> <span class="icon-m icon-facebook"></span></a>
+        <a href="#"> <span class="icon-m icon-twitter"></span></a>
+      </div>
      </ul>
   </nav>
 </nav>
 
-<div>
-  <img class="spisebord" src="billeder/spisebord.jpg" alt="">
+
+<div class="carousel-container">
+
+  <ul class="carousel my-carousel carousel--thumb">
+    <input class="carousel__activator" type="radio" id="K" name="thumb" checked="checked"/>
+    <input class="carousel__activator" type="radio" id="L" name="thumb"/>
+    <input class="carousel__activator" type="radio" id="M" name="thumb"/>
+
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="O"></label>
+      <label class="carousel__control carousel__control--forward" for="L"></label>
+    </div>
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="K"></label>
+      <label class="carousel__control carousel__control--forward" for="M"></label>
+    </div>
+    <div class="carousel__controls">
+      <label class="carousel__control carousel__control--backward" for="L"></label>
+      <label class="carousel__control carousel__control--forward" for="N"></label>
+    </div>
+
+    <li class="carousel__slide">
+     
+        <div class="slider-txt">
+          <h2 class="lille-h2">Lorem ipsum</h2>
+          <h2 class="større-h2">Lorem ipsum</h2>
+          <h2 class="større-h2">Lorem ipsum</h2>
+          
+        </div>
+       
+       
+     
+     
+
+    </li>
+    <li class="carousel__slide">
+      
+    </li>
+    <li class="carousel__slide">
+     
+    </li>
+
+    <div class="carousel__indicators">
+      <label class="carousel__indicator" for="K"></label>
+      <label class="carousel__indicator" for="L"></label>
+      <label class="carousel__indicator" for="M"></label>
+  
+    </div>
+  </ul>
 </div>
 
 <h1 id="next" class="title">Din lokale murermester i Bording - Med en bred vifte af kompetencer</h1>
